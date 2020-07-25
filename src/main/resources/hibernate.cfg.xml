@@ -1,0 +1,23 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="dialect">org.hibernate.dialect.MySQL57Dialect</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/jdbc_schema?serverTimezone=Europe/Warsaw</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">Miniu1994</property>
+        <property name="hbm2ddl.auto">none</property>
+        <property name="show_sql">true</property>
+        <property name="format_sql">false</property>
+        <property name="use.sql_comments">true</property>
+<!--        <mapping class="entity.Husband"/>-->
+<!--        <mapping class="entity.Wife"/>-->
+<!--        <mapping class ="entity.Client"/>-->
+<!--        <mapping class ="entity.Book"/>-->
+<!--        <mapping class ="entity.School"/>-->
+<!--        <mapping class ="entity.Student"/>-->
+<!--        <mapping class = "Pamietnik.DiaryUsersEntity"/>-->
+<!--        <mapping class = "Pamietnik.DiaryEntryEntity"/>-->
+        <mapping class="Projekt_praktyczny.bank.model.BankAccount"/>
+<!--        <mapping class=""/>-->
+    </session-factory>
+</hibernate-configuration>
